@@ -1,0 +1,7 @@
+C:\Users\arturs.bruveris\Desktop\Testing\src\obj\Release\net7.0\PubTmp\Out\src.exe
+C:\Users\arturs.bruveris\Desktop\Testing\src\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\arturs.bruveris\Desktop\Testing\src\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\arturs.bruveris\Desktop\Testing\src\obj\Release\net7.0\PubTmp\Out\src.dll
+C:\Users\arturs.bruveris\Desktop\Testing\src\obj\Release\net7.0\PubTmp\Out\src.deps.json
+C:\Users\arturs.bruveris\Desktop\Testing\src\obj\Release\net7.0\PubTmp\Out\src.runtimeconfig.json
+C:\Users\arturs.bruveris\Desktop\Testing\src\obj\Release\net7.0\PubTmp\Out\src.pdb
