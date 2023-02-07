@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arturs.bruveris\\Desktop\\git test\\src\\src.csproj": {}
+    "C:\\Users\\arturs.bruveris\\Source\\Repos\\Testing\\src\\src.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arturs.bruveris\\Desktop\\git test\\src\\src.csproj": {
+    "C:\\Users\\arturs.bruveris\\Source\\Repos\\Testing\\src\\src.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arturs.bruveris\\Desktop\\git test\\src\\src.csproj",
+        "projectUniqueName": "C:\\Users\\arturs.bruveris\\Source\\Repos\\Testing\\src\\src.csproj",
         "projectName": "src",
-        "projectPath": "C:\\Users\\arturs.bruveris\\Desktop\\git test\\src\\src.csproj",
+        "projectPath": "C:\\Users\\arturs.bruveris\\Source\\Repos\\Testing\\src\\src.csproj",
         "packagesPath": "C:\\Users\\arturs.bruveris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arturs.bruveris\\Desktop\\git test\\src\\obj\\",
+        "outputPath": "C:\\Users\\arturs.bruveris\\Source\\Repos\\Testing\\src\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\arturs.bruveris\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\arturs.bruveris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
