@@ -50,8 +50,6 @@ jobs:
           path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
-    permissions:
-      contents: none
     runs-on: windows-latest
     needs: build
     environment:
@@ -59,7 +57,10 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-      - uses: actions/checkout@master
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v3
+        with:
+          name: .net-app
       - uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
@@ -67,16 +68,10 @@ jobs:
         with:
           resourceGroupName: bootcamp-resources
           template: ./Infrastructure/webapp.json
-          
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v3
-        with:
-          name: .net-app
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.AZURE_CREDENTIALS }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          package: .
