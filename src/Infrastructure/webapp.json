@@ -69,7 +69,6 @@
       ]
     },
     {
-      "condition": "[contains(parameters('repoUrl'), 'http')]",
       "type": "Microsoft.Web/sites/sourcecontrols",
       "apiVersion": "2021-02-01",
       "name": "[format('{0}/{1}', parameters('webAppName'), 'web')]",
