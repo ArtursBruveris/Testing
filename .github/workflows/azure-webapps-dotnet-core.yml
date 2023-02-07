@@ -59,6 +59,15 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
+      - uses: actions/checkout@master
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE }}
+      - uses: azure/arm-deploy@v1
+        with:
+          resourceGroupName: bootcamp-resources
+          template: ./Infrastructure/webapp.json
+          
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
