@@ -74,7 +74,6 @@
       "apiVersion": "2021-02-01",
       "name": "[format('{0}/{1}', parameters('webAppName'), 'web')]",
       "properties": {
-        "repoUrl": "[parameters('repoUrl')]",
         "branch": "master",
         "isManualIntegration": true
       },
